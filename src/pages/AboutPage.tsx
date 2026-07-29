@@ -90,12 +90,19 @@ export function AboutPage() {
           <div className="page-footer-cta">
             <p>See the work, or get in touch.</p>
             <div className="hero__cta">
-              <Link className="btn btn--magenta" to="/projects">
+              <Link className="btn btn--ghost" to="/projects">
                 Projects
               </Link>
               <Link className="btn btn--ghost" to="/contact">
                 Contact
               </Link>
+              <a
+                className="btn btn--magenta"
+                href="/Ana-Pereira-CV.pdf"
+                download="Ana-Pereira-CV.pdf"
+              >
+                My CV
+              </a>
             </div>
           </div>
         </div>

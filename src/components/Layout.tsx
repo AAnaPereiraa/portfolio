@@ -1,8 +1,23 @@
-import { Link, NavLink } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 
 export function Header() {
+  const [menuOpen, setMenuOpen] = useState(false)
+  const location = useLocation()
+
+  useEffect(() => {
+    setMenuOpen(false)
+  }, [location.pathname])
+
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? 'hidden' : ''
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [menuOpen])
+
   return (
-    <header className="wrap">
+    <header className="wrap header">
       <nav className="nav" aria-label="Primary">
         <Link className="nav__brand" to="/" aria-label="Ana Pereira — Home">
           <img
@@ -13,7 +28,8 @@ export function Header() {
             height={64}
           />
         </Link>
-        <ul className="nav__links">
+
+        <ul id="site-menu" className={`nav__links${menuOpen ? ' nav__links--open' : ''}`}>
           <li>
             <NavLink to="/" end>
               Home
@@ -28,11 +44,39 @@ export function Header() {
           <li>
             <NavLink to="/contact">Contact</NavLink>
           </li>
+          <li className="nav__links-cta">
+            <Link className="btn btn--primary" to="/contact" onClick={() => setMenuOpen(false)}>
+              Contact me
+            </Link>
+          </li>
         </ul>
-        <Link className="btn btn--primary" to="/contact">
-          Work with me
+
+        <Link className="btn btn--primary nav__cta-desktop" to="/contact">
+          Contact me
         </Link>
+
+        <button
+          type="button"
+          className={`nav__toggle${menuOpen ? ' nav__toggle--open' : ''}`}
+          aria-expanded={menuOpen}
+          aria-controls="site-menu"
+          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+          onClick={() => setMenuOpen((open) => !open)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
       </nav>
+
+      {menuOpen && (
+        <button
+          type="button"
+          className="nav__backdrop"
+          aria-label="Close menu"
+          onClick={() => setMenuOpen(false)}
+        />
+      )}
     </header>
   )
 }
@@ -61,7 +105,7 @@ export function Footer() {
           <div>
             <p className="footer__label">Social</p>
             <div className="footer__links">
-              <a href="https://github.com/s2-AnaPereira-s2" target="_blank" rel="noreferrer">
+              <a href="https://github.com/AAnaPereiraa" target="_blank" rel="noreferrer">
                 GitHub
               </a>
               <a

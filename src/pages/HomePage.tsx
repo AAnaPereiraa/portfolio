@@ -43,9 +43,10 @@ export function HomePage() {
             custom={2}
             variants={fadeUp}
           >
-            Junior Developer based in Berlin — Python Backend, Software engineer at 42
-            Berlin (in progress), also learning Android / Kotlin at DevSpace. Open to any junior
-            role where I can keep shipping.
+            Python Backend Developer | Software Engineering student at 42 Berlin | Kotlin
+            learner at DevSpace.
+            <br />
+            Passionate about coding, collaboration, and continuous growth.
           </motion.p>
           <motion.div
             className="hero__cta"

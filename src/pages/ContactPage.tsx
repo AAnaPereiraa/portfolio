@@ -47,7 +47,7 @@ export function ContactPage() {
             <p className="contact-card__label">Social</p>
             <div className="contact-card__links">
               <a
-                href="https://github.com/s2-AnaPereira-s2"
+                href="https://github.com/AAnaPereiraa"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -61,6 +61,24 @@ export function ContactPage() {
                 LinkedIn
               </a>
             </div>
+          </motion.div>
+
+          <motion.div
+            className="contact-card contact-card--cv"
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.24, duration: 0.45 }}
+          >
+            <p className="contact-card__label">CV</p>
+            <p className="contact-card__value">Download my résumé</p>
+            <p className="contact-card__note">PDF · Junior developer profile</p>
+            <a
+              className="btn btn--magenta"
+              href="/Ana-Pereira-CV.pdf"
+              download="Ana-Pereira-CV.pdf"
+            >
+              My CV
+            </a>
           </motion.div>
         </div>
       </section>

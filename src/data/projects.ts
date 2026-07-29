@@ -16,7 +16,7 @@ export const projects: Project[] = [
       'Live multiplayer fishing adventure inspired by Florianópolis. Feature Lead for Social & Profiles — auth, friends, chat, and profiles in a TypeScript monorepo.',
     stack: ['TypeScript', 'Real-time', 'Auth'],
     liveUrl: 'https://seasonsoffloripa.com',
-    githubUrl: 'https://github.com/s2-AnaPereira-s2/my_transcendence',
+    githubUrl: 'https://github.com/AAnaPereiraa/my_transcendence',
     featured: true,
   },
   {
@@ -26,7 +26,7 @@ export const projects: Project[] = [
       'Cocktail recommender with profiles, preference quiz, and full auth including Google OAuth. Live on PythonAnywhere.',
     stack: ['Python', 'Django', 'SQL'],
     liveUrl: 'https://drinkmeup.pythonanywhere.com/',
-    githubUrl: 'https://github.com/s2-AnaPereira-s2/DrinkMeUp',
+    githubUrl: 'https://github.com/AAnaPereiraa/DrinkMeUp',
   },
   {
     title: 'Fuel Calculator',
@@ -34,7 +34,7 @@ export const projects: Project[] = [
     description:
       'Multi-step trip fuel cost calculator — destination, distance, consumption, and price — with View Binding and validation.',
     stack: ['Kotlin', 'Android'],
-    githubUrl: 'https://github.com/s2-AnaPereira-s2/FuelCalculator',
+    githubUrl: 'https://github.com/AAnaPereiraa/FuelCalculator',
   },
   {
     title: 'Inventory Management',
@@ -42,7 +42,7 @@ export const projects: Project[] = [
     description:
       'CRUD inventory tool for small businesses: add, display, update, and delete products through a simple UI.',
     stack: ['Python', 'SQLite'],
-    githubUrl: 'https://github.com/s2-AnaPereira-s2/inventory_management',
+    githubUrl: 'https://github.com/AAnaPereiraa/inventory_management',
   },
 ]
 
