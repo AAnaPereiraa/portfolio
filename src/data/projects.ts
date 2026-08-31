@@ -23,9 +23,9 @@ export const projects: Project[] = [
     title: 'DrinkMeUp',
     tagline: 'Django · Deployed',
     description:
-      'Cocktail recommender with profiles, preference quiz, and full auth including Google OAuth. Live on PythonAnywhere.',
+      'Cocktail recommender with profiles, preference quiz, guest mode, and full auth including Google OAuth. Live on Render.',
     stack: ['Python', 'Django', 'SQL'],
-    liveUrl: 'https://drinkmeup.pythonanywhere.com/',
+    liveUrl: 'https://drinkmeup.onrender.com/',
     githubUrl: 'https://github.com/AAnaPereiraa/DrinkMeUp',
   },
   {
