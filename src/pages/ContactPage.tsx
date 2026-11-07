@@ -71,7 +71,6 @@ export function ContactPage() {
           >
             <p className="contact-card__label">CV</p>
             <p className="contact-card__value">Download my résumé</p>
-            <p className="contact-card__note">PDF · Junior developer profile</p>
             <a
               className="btn btn--magenta"
               href="/Ana-Pereira-CV.pdf"
