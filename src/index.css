@@ -795,6 +795,7 @@ button {
   flex-direction: column;
   gap: 0.75rem;
   min-height: 100%;
+  container-type: inline-size;
 }
 
 .contact-card__label {
@@ -813,6 +814,15 @@ button {
   font-weight: 700;
   letter-spacing: -0.02em;
   word-break: break-word;
+}
+
+a.contact-card__value {
+  display: block;
+  white-space: nowrap;
+  word-break: normal;
+  overflow-wrap: normal;
+  font-size: clamp(0.9rem, 7.85cqi, 1.2rem);
+  letter-spacing: -0.03em;
 }
 
 a.contact-card__value:hover {
